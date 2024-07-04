@@ -12,7 +12,7 @@ this.cont_estudiante++;
 if(e.calcNotaT() > aux_mayor)
     aux_mayor =  e.calcNotaT();
     
-if (e.sexo === 1){ //1) Mujer   2)Hombre
+if (e.sexo === "F"){ //F) Mujer   M)Hombre
     this.cont_f++;
     if(e.calcNotaT >= 48)
     this.cont_f_a++;

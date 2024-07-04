@@ -15,15 +15,15 @@ notap1, notap2, notap3) (13457856, M, 15, 20, 25) (15432551, F, 10, 10, 10) (324
 import Cl_Estudiante from "./Cl_Estudiante.js";
 import Cl_DCYT from "./Cl_DCYT.js";
 
-let estudiante1=new Cl_Estudiante (13457856, M, 15, 20, 25);
-let estudiante2=new Cl_Estudiante (15432551, F, 10, 10, 10);
-let estudiante3=new Cl_Estudiante (32455678, M, 18, 22, 20);
-let estudiante4=new Cl_Estudiante (28678900, F, 18, 25, 24);
+let estudiante1=new Cl_Estudiante (13457856, "M", 15, 20, 25);
+let estudiante2=new Cl_Estudiante (15432551, "F", 10, 10, 10);
+let estudiante3=new Cl_Estudiante (32455678, "M", 18, 22, 20);
+let estudiante4=new Cl_Estudiante (28678900, "F", 18, 25, 24);
 let dcyt=new Cl_DCYT();
-procesar(estudiante1);
-procesar(estudiante2);
-procesar(estudiante3);
-procesar(estudiante4);
+dcyt.procesar(estudiante1);
+dcyt.procesar(estudiante2);
+dcyt.procesar(estudiante3);
+dcyt.procesar(estudiante4);
 let salida=document.getElementById("salida");
 salida.innerHTML="Resultados:";
 salida.innerHTML+= "<br> La nota total obtenida por el estudiante de cédula 13457856 fue: " +estudiante1.calcularNotaT();
