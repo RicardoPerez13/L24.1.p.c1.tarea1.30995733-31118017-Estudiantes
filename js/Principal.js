@@ -25,7 +25,7 @@ dcyt.procesar(estudiante2);
 dcyt.procesar(estudiante3);
 dcyt.procesar(estudiante4);
 let salida=document.getElementById("salida");
-salida.innerHTML="Resultados:";
+salida.innerHTML= "Resultados";
 salida.innerHTML+= "<br> La nota total obtenida por el estudiante de cédula 13457856 fue: " +estudiante1.calcularNotaT();
 salida.innerHTML+= "<br> La nota total obtenida por el estudiante de cédula 15432551 fue: " +estudiante2.calcularNotaT();
 salida.innerHTML+= "<br> La nota total obtenida por el estudiante de cédula 32455678 fue: " +estudiante3.calcularNotaT();

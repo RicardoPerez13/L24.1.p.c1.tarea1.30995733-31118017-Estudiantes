@@ -9,8 +9,8 @@ this.aux_mayor= 0;
     procesar(e){
 this.cont_estudiante++;
 
-if(e.calcNotaT() > aux_mayor)
-    aux_mayor =  e.calcNotaT();
+if(e.calcularNotaT() > this.aux_mayor)
+    this.aux_mayor =  e.calcularNotaT();
     
 if (e.sexo === "F"){ //F) Mujer   M)Hombre
     this.cont_f++;
