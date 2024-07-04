@@ -36,5 +36,7 @@ export default class Cl_Estudiante{
     get nota3(){
         return this.nota3
     }
-
+    calcularNotaT(){
+        return this.nota1+this.nota2+this.nota3;
+        }
 }

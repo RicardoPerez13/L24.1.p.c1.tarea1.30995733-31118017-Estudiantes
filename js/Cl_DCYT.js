@@ -9,7 +9,7 @@ this.aux_mayor= 0;
     procesar(e){
 this.cont_estudiante++;
 
-if(e.calcNotaT > aux_mayor)
+if(e.calcNotaT() > aux_mayor)
     aux_mayor =  e.calcNotaT();
     
 if (e.sexo === 1){ //1) Mujer   2)Hombre
@@ -18,9 +18,6 @@ if (e.sexo === 1){ //1) Mujer   2)Hombre
     cont_f_a++;
     }
  }
-    devolverNotaT(){
-        return e.nota1+e.nota2+e.nota3;
-        }
  
     devolverMayor(){
         return this.aux_mayor;
