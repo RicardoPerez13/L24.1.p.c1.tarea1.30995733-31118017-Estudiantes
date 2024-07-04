@@ -8,13 +8,12 @@ this.aux_mayor= 0;
 }
     procesar(e){
 this.cont_estudiante++;
+this.acum_nota+= e.calcularNotaT();
 
 if(e.calcularNotaT() > this.aux_mayor)
     this.aux_mayor =  e.calcularNotaT();
     
-if (e.sexo === "F"){ //F) Mujer   M)Hombre
-    this.cont_f++;
-    if(e.calcNotaT >= 48)
+if (e._sexo === "F" && e.calcularNotaT()>= 48){ //F) Mujer   M)Hombre
     this.cont_f_a++;
     }
  }
