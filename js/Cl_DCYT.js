@@ -13,8 +13,11 @@ this.acum_nota+= e.calcularNotaT();
 if(e.calcularNotaT() > this.aux_mayor)
     this.aux_mayor =  e.calcularNotaT();
     
-if (e._sexo === "F" && e.calcularNotaT()>= 48){ //F) Mujer   M)Hombre
+if (e._sexo === "F") {//F) Mujer   M)Hombre
+    this.cont_f++;
+    if(e.calcularNotaT()>= 48){ 
     this.cont_f_a++;
+     }
     }
  }
     devolverMayor(){
