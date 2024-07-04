@@ -13,12 +13,11 @@ if(e.calcNotaT() > aux_mayor)
     aux_mayor =  e.calcNotaT();
     
 if (e.sexo === 1){ //1) Mujer   2)Hombre
-    cont_f++;
+    this.cont_f++;
     if(e.calcNotaT >= 48)
-    cont_f_a++;
+    this.cont_f_a++;
     }
  }
- 
     devolverMayor(){
         return this.aux_mayor;
     }
